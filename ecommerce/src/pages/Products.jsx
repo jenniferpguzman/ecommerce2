@@ -1,5 +1,6 @@
 import React from 'react'
-
+// import '../stylesheets/Navbar.css'
+import '../stylesheets/Product.css'
 
 function Products({products}){
     return(
@@ -8,11 +9,11 @@ function Products({products}){
                 {products.map((product, index) => (
                 <div key={index} className="product-card">
                     <h2>{product.style_number}</h2>
-                    <h2>{product.title}</h2>
-                    <h2>{product.description}</h2>
-                    <h2>{product.price}</h2>
-                    <h2>{product.category}</h2>
-                    {/* <h2>{product.image_url}</h2> */}
+                    <h3>{product.title}</h3>
+                    <p>{product.description}</p>
+                    <p>{product.price}</p>
+                    <p>{product.category}</p>
+                    <img src={product.image_url} alt={product.title} />
 
                 </div>
                 ))}

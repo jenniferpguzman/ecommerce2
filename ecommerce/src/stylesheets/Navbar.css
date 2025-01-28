@@ -1,0 +1,61 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:Cormorant Garamond, sans-serif;
+    background-color: #eaeaea;
+}
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar title */
+.nav_bar .title {
+    font-size: 25px;
+    font-weight: bold; 
+    color: #333; 
+    text-decoration: none; 
+    padding: 0 10px;
+    margin:0;
+    margin-right: 50px;
+    text-align: center;
+}
+
+/* Nav links container */
+.nav_links {
+    display: flex;
+    justify-content: center;
+    background-color: transparent; 
+}
+
+/* Unordered list inside nav_links */
+.nav_links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 50px; 
+    list-style: none; 
+}
+
+/* Links inside list items */
+.nav_links a {
+    text-decoration: none;
+    font-size: 1rem; 
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav_links a:hover {
+    color: #000;
+    text-decoration:underline;
+}

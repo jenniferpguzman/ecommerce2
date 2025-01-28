@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from './pages/Home'
 import Products from './pages/Products'
 import Contact from './pages/Contact'
+import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
 
 function App() {
   const [data, setData] =useState([]);
@@ -17,11 +19,13 @@ function App() {
   return (
     <>
   <BrowserRouter>
+  <Navbar />
   <Routes>
     <Route path='/' element={<Home />} />
     <Route path='products' element={<Products products={data}/>} />
     <Route path='contact' element={<Contact />} />
   </Routes>
+  <Footer />
   </BrowserRouter>
     </>
   )
