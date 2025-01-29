@@ -1,6 +1,6 @@
 import React from 'react';
 import '../stylesheets/Home.css';
-import '../stylesheets/NavBar.css'
+import '../stylesheets/Navbar.css'
 import '../stylesheets/Footer.css'
 
 const Home = () => {

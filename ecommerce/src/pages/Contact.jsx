@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../stylesheets/Contact.css'
-import '../stylesheets/NavBar.css'
+import '../stylesheets/Navbar.css'
 import '../stylesheets/Footer.css'
 
 const Contact = () => {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import '../stylesheets/Product.css';
-import '../stylesheets/NavBar.css'
+import '../stylesheets/Navbar.css'
 import '../stylesheets/Footer.css'
 
 function Products() {
