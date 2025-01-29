@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import './App.css'
 import Axios from 'axios'
 import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from './pages/Home'

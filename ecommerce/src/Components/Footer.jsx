@@ -1,18 +1,23 @@
-import '../stylesheets/Home.css'
+import '../stylesheets/Footer.css'
 
 function Footer(){ 
     return(
         <>
-        <div className="top_container">
-            <ul>
-                <li><a href="https://www.instagram.com/"><i className="fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/jennifer-guzman-027559259/"><i className="fa-linkedin"></i></a></li>
-            </ul>
-        </div><div className="bottom_container">
-                <p>&copy;Jenny Spade 2024</p>
-            </div>
-            </>
+        <p>&copy;Jenny Spade 2024</p>
+        <div className="social-icons">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+    </>
     )
 }
 
 export default Footer;
+
