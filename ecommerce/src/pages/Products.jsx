@@ -1,11 +1,13 @@
 import React from 'react'
-// import '../stylesheets/Navbar.css'
 import '../stylesheets/Product.css'
+
 
 function Products({products}){
     return(
         <>
-        <div className="product_list">Products</div>
+        <div className="product_list">
+            <h1>Products</h1>
+            </div>
                 {products.map((product, index) => (
                 <div key={index} className="product-card">
                     <h2>{product.style_number}</h2>
@@ -14,9 +16,9 @@ function Products({products}){
                     <p>{product.price}</p>
                     <p>{product.category}</p>
                     <img src={product.image_url} alt={product.title} />
-
                 </div>
                 ))}
+                
         </>
     );
 }
